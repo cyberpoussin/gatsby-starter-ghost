@@ -1218,9 +1218,6 @@ h6 {
         color: #fff;
     }
 
-    .post-card-image {
-        background: var(--darkmode);
-    }
 
     .post-card-title {
         color: rgba(255, 255, 255, 0.85);
