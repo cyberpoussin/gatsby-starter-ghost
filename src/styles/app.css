@@ -20,15 +20,17 @@ what's here to work the way you'd like it to.
 
 
 /* DARK MODE */
-@media (prefers-color-scheme: dark)
-    screen.css:2854.page-template .site-main, .post-full-content, .post-template .site-main, .site-main {
-    background: #191b1f;
+@media (prefers-color-scheme: dark) {
+    .site-main, .post-full-content, .post-template .site-main, .site-main {
+        background: #191b1f;
+    }
 }
 
-@media (prefers-color-scheme: dark)
-    screen.css:2797body {
-    color: hsla(0,0%,100%,.75);
-    background: #191b1f;
+@media (prefers-color-scheme: dark) {
+    body {
+        color: hsla(0,0%,100%,.75);
+        background: #191b1f;
+    }
 }
 
 
