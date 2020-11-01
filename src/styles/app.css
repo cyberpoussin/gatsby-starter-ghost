@@ -16,8 +16,26 @@ what's here to work the way you'd like it to.
 - Pagination
 - Footer
 
+*/
+
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark)
+    screen.css:2854.page-template .site-main, .post-full-content, .post-template .site-main, .site-main {
+    background: #191b1f;
+}
+
+@media (prefers-color-scheme: dark)
+    screen.css:2797body {
+    color: hsla(0,0%,100%,.75);
+    background: #191b1f;
+}
+
+
 /* Variables
 /* ---------------------------------------------------------- */
+
+
 
 :root {
 
@@ -545,7 +563,6 @@ h6 {
 .post-full-content {
     max-width: 720px;
     margin: 0 auto;
-    background: #fff;
 }
 
 .post-feature-image img {
@@ -760,7 +777,6 @@ h6 {
 
 .site-main {
     padding: 4vw 0;
-    background: #191b1f;
 }
 
 /* Index
