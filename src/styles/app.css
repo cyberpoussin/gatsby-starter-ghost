@@ -734,6 +734,11 @@ h6 {
     text-align: center;
 }
 
+.site-banner-logo {
+    display: flex;
+    justify-content: center;
+}
+
 .site-banner-title {
     margin: 0;
     padding: 0;
