@@ -58,7 +58,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </div>
                             { isHome ?
                                 <div className="site-banner">
-                                    <div style="display: flex; align-items: center; align-content: center; justify-content: center;">
+                                    <div className="site-banner-logo">
                                         <Link to="/">
                                             {site.logo ?
                                                 <img className="site-logo" src={site.logo} alt={site.title} />
