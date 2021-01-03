@@ -38,6 +38,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                         <div className="container">
                             <div className="site-mast">
+{/*
                                 <div className="site-mast-left">
                                     <Link to="/">
                                         {site.logo ?
@@ -46,6 +47,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         }
                                     </Link>
                                 </div>
+*/}
 {/*
                                 <div className="site-mast-right">
                                     { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
@@ -56,7 +58,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </div>
                             { isHome ?
                                 <div className="site-banner">
-                                    <h1 className="site-banner-title">{site.title}</h1>
+                                    <div style="display: flex; align-items: center; align-content: center; justify-content: center;">
+                                        <Link to="/">
+                                            {site.logo ?
+                                                <img className="site-logo" src={site.logo} alt={site.title} />
+                                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                            }
+                                        </Link>
+                                        <h1 className="site-banner-title">{site.title}</h1>
+                                    </div>
                                     <p className="site-banner-desc">{site.description}</p>
                                 </div> :
                                 null}
