@@ -835,6 +835,9 @@ h6 {
     height: 200px;
     background: var(--color-secondary) no-repeat center center;
     background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .post-card-footer {
