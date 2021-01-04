@@ -6,8 +6,6 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
-import Prism from "prismjs"
-import "prismjs/plugins/line-numbers/prism-line-numbers.js"
 
 /**
 * Single post view (/:slug)
