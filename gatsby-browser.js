@@ -1,4 +1,7 @@
 /* eslint-disable */
+
+require("prismjs/themes/prism-okaidia.css");
+
 /**
  * Trust All Scripts
  *
