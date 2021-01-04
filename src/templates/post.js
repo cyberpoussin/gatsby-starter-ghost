@@ -17,9 +17,6 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js"
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
-    useEffect(() => {
-        Prism.highlightAll();
-      });
     return (
         <>
             <MetaData
