@@ -36,6 +36,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
                  
+                        <div className="site-post-title">{site.title}</div>
                         <header className={ !isHome ? "site-head post-head" : "site-head"} style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                         
                         <div className="container">
