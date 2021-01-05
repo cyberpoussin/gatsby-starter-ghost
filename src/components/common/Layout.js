@@ -35,7 +35,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                    <header className="site-head {isHome ? null : "post-head"}" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                         <div className="container">
                             <div className="site-mast">
 {/*
@@ -60,6 +60,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
+                                { !isHome ? 
+                                    <div className="site-nav-left-miniLogo">
+                                        <Link to="/">
+                                                {site.logo ?
+                                                    <img className="site-logo" src={site.logo} alt={site.title} />
+                                                    : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                                }
+                                        </Link>
+                                     </div> : null
+                                }
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
                                 </div>
                                 <div className="site-nav-right">
@@ -80,15 +90,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </div>
                                     <p className="site-banner-desc">{site.description}</p>
                                 </div> :
-                                <div className="site-banner">
-                                    <Link to="/">
-                                            {site.logo ?
-                                                <img className="site-logo" src={site.logo} alt={site.title} />
-                                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                            }
-                                        </Link>
-                                </div>
-                            
+                                null
                             }
                         </div>
                     </header>
