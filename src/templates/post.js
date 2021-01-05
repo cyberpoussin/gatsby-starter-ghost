@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from "react"
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
