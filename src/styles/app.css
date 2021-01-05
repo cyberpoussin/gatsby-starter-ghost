@@ -743,6 +743,12 @@ body {
     padding-right: 20px;
 }
 
+.site-mini-logo {
+    height: 30px !important;
+    min-height: 0px !important;
+    padding-right: 20px;
+}
+
 .site-mast {
     display: flex;
     align-items: center;
