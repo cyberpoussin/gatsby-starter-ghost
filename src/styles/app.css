@@ -691,6 +691,7 @@ body {
 
 .site-post-title {
     opacity: 0;
+    transition: opacity .35s ease-in-out;
 }
 
 .fade-in {
@@ -710,10 +711,20 @@ body {
     position: sticky;
     top: 0;
     height: 50px;
+    z-index: 300;
 }
 
 .post-head .site-nav {
-    margin-top: -20px;
+    margin-top: -10px;
+}
+
+.site-nav-menu {
+    margin-top: 3px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
 }
 
 .site-nav-item {
