@@ -689,14 +689,13 @@ h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    background: var(--color-base);
+    background: black !important;
     background-position: center;
     background-size: cover;
 }
 
 .site-nav-item {
     position: relative;
-    display: block;
     padding: 12px;
     color: #fff;
     opacity: .8;
