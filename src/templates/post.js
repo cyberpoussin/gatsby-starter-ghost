@@ -41,6 +41,8 @@ const Post = ({ data, location }) => {
             </Helmet>
             <Layout>
                 <div className="container">
+                <div className="site-post-title">{ post.title }</div>
+
                     <article className="content">
                         { post.feature_image ?
                             <figure className="post-feature-image">
