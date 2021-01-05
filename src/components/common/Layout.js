@@ -35,9 +35,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    { !isHome ? <header className="site-head post-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}> :
-                        <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
-                    }
+                 
+                        <header className={ !isHome ? "site-head post-head" : "site-head"} style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                        
                         <div className="container">
                             <div className="site-mast">
 {/*
@@ -91,8 +91,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         <h1 className="site-banner-title">{site.title}</h1>
                                     </div>
                                     <p className="site-banner-desc">{site.description}</p>
-                                </div> :
-                                null
+                                </div> : null
                             }
                         </div>
                     </header>
