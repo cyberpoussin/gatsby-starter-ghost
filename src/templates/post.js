@@ -6,6 +6,8 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
+//import the Prism package
+import Prism from "prismjs"
 
 /**
 * Single post view (/:slug)
@@ -15,6 +17,10 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+      useEffect(() => {
+        // call the highlightAll() function to style our code blocks
+        Prism.highlightAll()
+      })
     return (
         <>
             <MetaData
