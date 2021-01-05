@@ -56,6 +56,17 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
 */}
                             </div>
+                            
+                            <nav className="site-nav">
+                                <div className="site-nav-left">
+                                    {/* The navigation items as setup in Ghost */}
+                                    <Navigation data={site.navigation} navClass="site-nav-item" />
+                                </div>
+                                <div className="site-nav-right">
+                                    <Link className="site-nav-button" to="/about">About</Link>
+                                </div>
+                            </nav>
+    
                             { isHome ?
                                 <div className="site-banner">
                                     <div className="site-banner-logo">
@@ -79,15 +90,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                             
                             }
-                            <nav className="site-nav">
-                                <div className="site-nav-left">
-                                    {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
-                                </div>
-                                <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
-                                </div>
-                            </nav>
                         </div>
                     </header>
 
