@@ -689,6 +689,13 @@ body {
     overflow: visible;
 }
 
+.site-post-title {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
 
 .site-head {
     padding-top: 20px;
