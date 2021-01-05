@@ -1,4 +1,7 @@
 /* eslint-disable */
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+
+
 /**
  * Trust All Scripts
  *
