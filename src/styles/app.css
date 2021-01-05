@@ -701,6 +701,7 @@ h6 {
     color: #fff;
     opacity: .8;
     transition: opacity .35s ease-in-out;
+    text-transform: uppercase;
 }
 
 .site-nav-item a:hover {
