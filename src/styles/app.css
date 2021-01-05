@@ -691,8 +691,15 @@ body {
 
 .site-post-title {
     opacity: 0;
+    position: fixed;
+    top: 0;
+    color: wheat;
+    z-index: 400;
+    margin: 13px;
+    margin-left: 50px;
     transition: opacity .35s ease-in-out;
 }
+
 
 .fade-in {
     opacity: 1;
