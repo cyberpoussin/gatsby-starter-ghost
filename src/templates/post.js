@@ -27,6 +27,7 @@ const Post = ({ data, location }) => {
     useEffect(() => {
         // call the highlightAll() function to style our code blocks
         Prism.highlightAll()
+        const myScript = require('./script.js')
     })
     return (
         <>
