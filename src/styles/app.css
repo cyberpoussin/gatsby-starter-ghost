@@ -732,6 +732,11 @@ body {
     transition: all .35s ease-in-out;
 }
 
+.site-nav-item:hover:before {
+    right: 12px;
+    opacity: 0.5;
+}
+
 .site-nav-icon {
     height: 15px;
     margin: -5px 0 0;
