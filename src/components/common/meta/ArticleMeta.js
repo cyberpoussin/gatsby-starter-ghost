@@ -110,19 +110,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                 <script>
-                    let scrollpos = window.scrollY
-                    const header = document.querySelector("nav")
-                    const header_height = header.offsetHeight
-                    const add_class_on_scroll = () => header.classList.add("fade-in")
-                    const remove_class_on_scroll = () => header.classList.remove("fade-in")
-                    window.addEventListener('scroll', function() { 
-                    scrollpos = window.scrollY;
-                    if (scrollpos >= header_height) { add_class_on_scroll() }
-                    else { remove_class_on_scroll() }
-                    console.log(scrollpos)
-                    })
-                </script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
