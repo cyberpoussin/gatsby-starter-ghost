@@ -685,6 +685,11 @@ h6 {
 /* Header
 /* ---------------------------------------------------------- */
 
+body {
+    overflow: visible;
+}
+
+
 .site-head {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -692,6 +697,12 @@ h6 {
     background: black !important;
     background-position: center;
     background-size: cover;
+}
+
+.post-head {
+    position: sticky;
+    top: 0;
+    height: 40px;
 }
 
 .site-nav-item {
