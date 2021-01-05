@@ -567,6 +567,11 @@ h6 {
     margin: 0 auto;
 }
 
+.post-full-content pre {
+    max-width: 10 !important;
+    background: black;
+}
+
 .post-feature-image img {
     margin: 0 0 3vw;
     width: 100%;
