@@ -694,7 +694,7 @@ h6 {
     background-size: cover;
 }
 
-.site-nav-item a {
+.site-nav-item {
     position: relative;
     display: block;
     padding: 12px;
@@ -704,12 +704,12 @@ h6 {
     text-transform: uppercase;
 }
 
-.site-nav-item a:hover {
+.site-nav-item:hover {
     text-decoration: none;
     opacity: 1;
 }
 
-.site-nav-item a:before {
+.site-nav-item:before {
     content: "";
     position: absolute;
     right: 100%;
