@@ -20,10 +20,14 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js";
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
-      useEffect(() => {
+    post.html = post.html.replace(
+        new RegExp("<pre><code", "g"),
+        '<pre class="line-numbers"><code'
+    );
+    useEffect(() => {
         // call the highlightAll() function to style our code blocks
         Prism.highlightAll()
-      })
+    })
     return (
         <>
             <MetaData
